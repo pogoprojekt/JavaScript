@@ -36,8 +36,8 @@ console.log("Wylosowane karty");
 for (let i = 0; i < 5; i++) {
   console.log(`${deck[i].Value} ${deck[i].Suit}`);
 }
-let limitedArray = deck.slice(0, 5);
+let limitedCardsToFive = deck.slice(0, 5);
 
 module.exports = {
-  limitedArray,
+  limitedCardsToFive,
 };

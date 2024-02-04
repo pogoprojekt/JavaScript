@@ -1,4 +1,4 @@
-const { limitedArray } = require("./createcards");
+const { limitedCardsToFive } = require("./createcards");
 const { areCardsExactlyInOrder } = require("./orderandcolor");
 
 const { checkisFourThreeorPair, potentialPoker } = require("./pokerorder");
@@ -29,7 +29,7 @@ function compareCards(card1, card2) {
   return index1 - index2;
 }
 
-limitedArray.sort(compareCards);
+limitedCardsToFive.sort(compareCards);
 // limitedArray=[
 //     { Value: '2', Suit: 'Spades' },
 //     { Value: '3', Suit: 'Diamonds' },
@@ -37,13 +37,13 @@ limitedArray.sort(compareCards);
 //     { Value: '6', Suit: 'Spades' },
 //     { Value: '7', Suit: 'Spades' }
 //   ];
-console.log(limitedArray);
+console.log(limitedCardsToFive);
 
 if (
-  areCardsExactlyInOrder(limitedArray, straightFiveOrder) ||
-  areCardsExactlyInOrder(limitedArray, cardsOrder)
+  areCardsExactlyInOrder(limitedCardsToFive, straightFiveOrder) ||
+  areCardsExactlyInOrder(limitedCardsToFive, cardsOrder)
 ) {
-  potentialPoker(limitedArray);
+  potentialPoker(limitedCardsToFive);
 } else {
-  checkisFourThreeorPair(limitedArray);
+  checkisFourThreeorPair(limitedCardsToFive);
 }
