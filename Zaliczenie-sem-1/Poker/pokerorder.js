@@ -12,10 +12,10 @@ function potentialPoker(cardArray) {
 }
 
 function checkisFourThreeorPair(cardArray) {
-  let valueOccurrences = {};
+  const valueOccurrences = {};
 
   for (let card of cardArray) {
-    let value = card.Value;
+    const value = card.Value;
     valueOccurrences[value] = (valueOccurrences[value] || 0) + 1;
   }
   console.log(valueOccurrences);
@@ -40,7 +40,7 @@ function checkisFourThreeorPair(cardArray) {
     console.log("Masz Three of a Kind");
   }
 
-  if (pairCount === 1) {
+  else if (pairCount === 1) {
     console.log("Masz One Pair");
   } else if (pairCount === 2) {
     console.log("Masz Two Pair");
