@@ -23,8 +23,8 @@ const flushOrder = ["10", "Walet", "Dama", "Król", "As"];
 
 // Funkcja porównująca obiekty po polu "Value" z wykorzystaniem hierarchii wartości cardsOrder
 function compareCards(card1, card2) {
-  let index1 = cardsOrder.indexOf(card1.Value);
-  let index2 = cardsOrder.indexOf(card2.Value);
+  const index1 = cardsOrder.indexOf(card1.Value);
+  const index2 = cardsOrder.indexOf(card2.Value);
 
   return index1 - index2;
 }
