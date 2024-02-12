@@ -34,7 +34,7 @@ for (let i = deck.length - 1; i > 0; i--) {
 console.log("Wylosowane karty");
 
 for (let i = 0; i < 5; i++) {
-  console.log(`${deck[i].Value} ${deck[i].Suit}`);
+  console.log(deck[i].Value + " " +  deck[i].Suit);
 }
 let limitedCardsToFive = deck.slice(0, 5);
 
