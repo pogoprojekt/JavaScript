@@ -51,8 +51,8 @@ function solveSudoku(board) {
 
   if (solve()) {
     return board;
-  // } else {
-  //   return "Brak rozwiązania dla danego sudoku.";
+  } else {
+    return "Brak rozwiązania dla danego sudoku.";
   }
 
 }
