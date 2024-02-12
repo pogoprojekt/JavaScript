@@ -49,7 +49,11 @@ function solveSudoku(board) {
     return true;
   }
 
+  if (solve()) {
     return board;
+  // } else {
+  //   return "Brak rozwiązania dla danego sudoku.";
+  }
 
 }
 
