@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncy Ball Simulator</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 24px;
+            border: 1px solid #ccc;
+        }
+        .X {
+            background-color: #444;
+        }
+        .Y {
+            background-color: #ffa500;
+        }
+        .zero {
+            background-color: #fff;
+        }
+        .one {
+            background-color: #00f;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <table id="board"></table>
+    <script src="script.js"></script>
+</body>
+</html>
